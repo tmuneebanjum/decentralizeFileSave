@@ -23,11 +23,11 @@
     "react-bootstrap": "^1.3.0",
     "react-dom": "^16.13.1",
     "react-scripts": "^3.4.3",
-    "truffle": "^5.1.45",
+    "truffle": "^5.3.10",
     "truffle-hdwallet-provider-privkey": "^0.3.0",
     "web3": "^1.3.0"
   },
-  "homepage" : "http://tmuneebanjum.github.io/filesave",
+  "homepage": "http://tmuneebanjum.github.io/decentralizeFileSave",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -35,7 +35,6 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
-    
   },
   "eslintConfig": {
     "extends": "react-app"

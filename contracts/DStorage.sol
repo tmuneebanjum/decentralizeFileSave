@@ -1,4 +1,5 @@
-pragma solidity ^0.5.0;
+pragma solidity ^0.8.0;
+
 
 contract DStorage {
   string public name = 'DStorage';
@@ -48,8 +49,8 @@ contract DStorage {
     fileCount ++;
 
     // Add File to the contract
-    files[fileCount] = File(fileCount, _fileHash, _fileSize, _fileType, _fileName, _fileDescription, now, msg.sender);
+    files[fileCount] = File(fileCount, _fileHash, _fileSize, _fileType, _fileName, _fileDescription, block.timestamp, payable (msg.sender));
     // Trigger an event
-    emit FileUploaded(fileCount, _fileHash, _fileSize, _fileType, _fileName, _fileDescription, now, msg.sender);
+    emit FileUploaded(fileCount, _fileHash, _fileSize, _fileType, _fileName, _fileDescription, block.timestamp, payable (msg.sender));
   }
 }
